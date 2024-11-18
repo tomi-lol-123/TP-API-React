@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import "./miCss.css";
+import dager from "./Dot Dager - profile picture.jpg"
+import fernan from "./fernanfloo - profile picture.jpg"
+import dross from "./dross - mamado.jpg"
+
 
 function App() {
+
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          ¿Tetas o culo?
-        </p>
-        <a
-          className="App-link"
-          href="https://www.youtube.com/watch?app=desktop&v=G6WsU2JIoBQ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="fondo">
+
+    <div className = "imagenes">
+      <img src={dager} className="dager" />
+      <img src={fernan} className="fernan" />
+      <img src={dross} className="dross" />
     </div>
+
+
+  
+     
+
+    </div>
+    
   );
 }
 

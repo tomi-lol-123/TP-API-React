@@ -1,0 +1,18 @@
+.fondo {
+    background-color: rgb(52, 84, 1);
+    color: white;
+    font-size: 2em;
+  } 
+
+.imagenes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px ;
+}
+
+.imagenes img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  
+}
