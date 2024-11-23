@@ -1,22 +1,38 @@
 import './App.css';
-import "./miCss.css";
-import dager from "./Dot Dager - profile picture.jpg"
-import fernan from "./fernanfloo - profile picture.jpg"
-import dross from "./dross - mamado.jpg"
+import avatar from "./default icon.png";
+import { useState} from "react";
 
 
-function Boton() {
-  return (
-      <button>hola, soy un boton :p</button>
-  );
-}
 
 export default function App() {
-  return (
-    <div>
-      <h1>¡Bienvenido a mi aplicación!</h1>
-      <Boton /> 
-    </div>
-  ); 
+    const [count, setCount] = useState(0);
+
+    function handleClick() {
+        setCount(count + 1);
+    }
+
+
+  
+    return (
+        <div>
+            <h1>Contadores que se actualizan separadamente</h1>
+            <button onClick={handleClick}>
+                hiciste click {count} veces
+            </button>   
+        </div>   
+      );
 }
 
+function MyButton() {
+    const [count, setCount] = useState(0);
+  
+    function handleClick() {
+      setCount(count + 1);
+    }
+  
+    return (
+      <button onClick={handleClick}>
+        Hiciste clic {count} veces
+      </button>
+    );
+  }
