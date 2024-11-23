@@ -8,21 +8,15 @@ import dross from "./dross - mamado.jpg"
 function Boton() {
   return (
       <button>hola, soy un boton :p</button>
-  )
+  );
 }
 
-function App() {
-  
-  
+export default function App() {
   return (
     <div>
       <h1>¡Bienvenido a mi aplicación!</h1>
-      <Boton/>
-
+      <Boton /> 
     </div>
-  )
-
-  
+  ); 
 }
 
-export default App;
