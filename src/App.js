@@ -69,7 +69,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1>¡Adivina el Número!</h1>
+      <h1>¡Adivine el Número, Godio!</h1>
       <p>Intentos restantes: {intentos}</p>
       <p>{mensaje}</p>
 
